@@ -38,14 +38,15 @@ class My_unit_test extends CI_Unit_test {
 		$r;
 		$r .= "[Test results] : ".$result[0]['File Name']."\n";
 
-		$mask = "%32.60s \t %20.20s \t %20.20s \t %5.20s \n";
+		$mask = "%32.60s \t %20.20s \t %20.20s \t %5.20s \t %32.60s \n";
 
 		$r .= "\033[44m";
 		$r .= sprintf($mask, 
 			'Test Name',
 			'Test Datatype',
 			'Expected Datatype',
-			'Result'
+			'Result',
+			'Notes'
 		);
 		$r .= "\033[0m";
 
@@ -61,7 +62,8 @@ class My_unit_test extends CI_Unit_test {
 				$row['Test Name'],
 				$row['Test Datatype'],
 				$row['Expected Datatype'],
-				$resultStr
+				$resultStr,
+				$row['Notes']
 			);
 		}
 
