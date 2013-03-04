@@ -1,6 +1,7 @@
 codeigniter-cli_unit_test
 ======================
 A CodeIgniter library extending the unit_test library, for CLI output.
+
 It's a simple extension with a new function `cli_report()` , 
 which outputs the test result colored for your CLI.
 
@@ -28,7 +29,7 @@ Load the library as you would the Codeigniter's native Unit_test library.
 $this->load->library('unit_test');
 ```
 
-Then call the cli_report() function as you would the native report() function.
+Then call the `cli_report()` function as you would the native `report()` function.
 ```
 echo $this->unit->cli_report();
 ```
