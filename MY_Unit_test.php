@@ -38,7 +38,7 @@ class My_unit_test extends CI_Unit_test {
 		$r;
 		$r .= "[Test results] : ".$result[0]['File Name']."\n";
 
-		$mask = "%60.80s \t %20.20s \t %20.20s \t %5.20s \t %20.40s \n";
+		$mask = "%-60.80s \t %-20.20s \t %-20.20s \t %-5.20s \t %-20.40s \n";
 
 		$r .= "\033[44m";
 		$r .= sprintf($mask, 
