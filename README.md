@@ -13,7 +13,6 @@ Requirements
 -----------
 1. PHP 5.0 or more
 2. CodeIgniter 2.0 or more (http://codeigniter.com)
-3. CodeIgniter Redis Library (https://github.com/joelcox/codeigniter-redis)
 
 Guide
 -----------
